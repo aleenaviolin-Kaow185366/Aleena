@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ปริศนาศัพท์ดนตรี</title>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@500;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffe08a;--card:#fff;--ink:#2b2320;--mute:#8a7a6c;--line:#f0e0cc;--coral:#f26a52;--gold:#e0a020;--ok:#2f7d4f;--okbg:#e3f3e8;--bad:#c0392b;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#201814;--card:#2d231d;--ink:#fbeee0;--mute:#b9a591;--line:#43342b;--coral:#ff8a72;--gold:#e9c46a;--ok:#6fcf97;--okbg:#1f3a2a;--bad:#ff7b6b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#201814;--card:#2d231d;--ink:#fbeee0;--mute:#b9a591;--line:#43342b;--coral:#ff8a72;--gold:#e9c46a;--ok:#6fcf97;--okbg:#1f3a2a;--bad:#ff7b6b;color-scheme:dark}
+*{box-sizing:border-box}html,body{margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:var(--bg);color:var(--ink);font-family:'Mali','Sarabun',system-ui,sans-serif;line-height:1.45}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:480px;margin:0 auto;padding:18px 16px 110px}
+.hi{font-size:1.5rem;margin:.2rem 0}h3{margin:20px 0 8px}h2{margin:6px 0}
+.sub{color:var(--mute);margin:0 0 8px}small{color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px}
+.ring{display:flex;gap:14px;align-items:center}
+.rg{width:78px;height:78px;border-radius:50%;background:conic-gradient(var(--coral) calc(var(--p)*1%),var(--line) 0);display:grid;place-items:center;flex:none}
+.rg b{background:var(--card);border-radius:50%;width:58px;height:58px;display:grid;place-items:center}
+.btn{background:var(--coral);color:#fff;border:0;border-radius:14px;padding:12px 20px;font-weight:700}.btn.sm{padding:6px 14px;margin-top:6px}
+.btn2{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 16px;margin:8px 8px 0 0}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:24px 12px;margin-top:22px}
+.cc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 10px 10px;text-align:center;display:flex;flex-direction:column;gap:4px;align-items:center}
+.ey{position:absolute;top:-12px;left:50%;transform:translateX(-50%)}
+.ct{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:1.4rem}.ct.big{width:56px;height:56px;background:rgba(255,255,255,.25)}
+.pb{height:8px;width:100%;background:var(--line);border-radius:8px;overflow:hidden}.pb i{display:block;height:100%;background:var(--coral);width:0;transition:width .3s}
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.tl{aspect-ratio:1;border:3px solid var(--card);border-radius:20px;color:#fff;font-weight:700;font-size:.78rem;transform:rotate(var(--r));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:6px;box-shadow:0 3px 0 rgba(0,0,0,.15)}.tl span{font-size:1.8rem}
+.hd{border-radius:22px;padding:14px;color:#fff}.hd p{margin:0 0 8px}.hd .pb{background:rgba(255,255,255,.3)}.hd .pb i{background:#fff}.hd small{color:#fff;opacity:.9}
+.ghost{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 12px}.hd .ghost{color:var(--ink)}
+.row{display:flex;justify-content:space-between;align-items:center;width:100%;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:left}
+.lst{display:grid;gap:8px}.row small{display:block}.row.lk{opacity:.55;cursor:not-allowed}.sr{color:var(--gold)}
+.bn{background:var(--coral);color:#fff;border-radius:20px;padding:16px;display:flex;gap:12px;align-items:center;font-size:1.05rem}.bn>span{font-size:2rem}
+.pr{display:grid;grid-template-columns:1.5fr 1fr auto;gap:8px;align-items:center;margin:10px 0;font-size:.9rem}
+.medals{display:flex;gap:10px;font-size:1.7rem}.medals span{filter:grayscale(1);opacity:.35}.medals span.on{filter:none;opacity:1}
+.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0;text-align:center}.st3 b{display:block;font-size:1.3rem}
+.av{width:72px;height:72px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:700;margin:0 auto}
+.ob{text-align:center;padding-top:30px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.ob input{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.nav{position:fixed;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;display:flex;justify-content:space-around;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--line);border-radius:22px 22px 0 0}
+.nav button{background:none;border:0;border-radius:20px;padding:8px 12px;font-size:1.2rem;display:flex;gap:6px;align-items:center}
+.nav button small{font-size:.8rem;font-weight:700;color:inherit}.nav button:not(.on) small{display:none}.nav button.on{background:var(--coral);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.how{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-size:.88rem;color:var(--mute);margin:10px 0}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:10px}.col{display:flex;flex-direction:column;gap:8px}
+.it{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:10px;text-align:left;min-height:58px}
+.it.term{font-weight:700;font-size:1.02rem}.it small{display:block;font-size:.78rem}
+.it.sel{border-color:var(--coral);background:color-mix(in srgb,var(--coral) 12%,var(--card))}
+.it.done{border-color:var(--ok);background:var(--okbg);cursor:default;opacity:.85}
+.it.bad{animation:sh .35s;border-color:var(--bad)}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:16px;overflow:auto}
+.ov>div{background:var(--card);border-radius:20px;padding:20px;max-width:400px;width:100%;text-align:center;max-height:90vh;overflow:auto}
+.stars{font-size:2rem;color:var(--gold);letter-spacing:4px}
+.ls{text-align:left;margin:10px 0;font-size:.92rem}.ls div{padding:5px 0;border-bottom:1px solid var(--line)}.ls b{color:var(--coral)}
+html{font-size:clamp(15px,.3vw + 14px,18px)}svg{max-width:100%}
+.it,.row,.cc b,.tl{overflow-wrap:anywhere}
+.ob{max-width:420px;margin:0 auto}
+html{-webkit-text-size-adjust:100%}
+body{min-height:100vh;min-height:100dvh;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+button{touch-action:manipulation}
+button:focus-visible,input:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.nav{z-index:10}.ov{z-index:50}.ov>div{max-height:90vh;max-height:90dvh}
+.cc,.row,.it,.pr>*,.row>span{min-width:0}
+.btn,.btn2,.ghost,.nav button{min-height:44px}
+.ob input{font-size:16px}
+@media (min-width:600px){
+.wrap{max-width:720px;padding:24px 24px 120px}.nav{max-width:720px}
+.cg,.tg{grid-template-columns:repeat(3,1fr)}.tg{gap:22px}
+.lst{grid-template-columns:1fr 1fr}
+.it{padding:14px;min-height:66px}.hi{font-size:1.9rem}
+}
+@media (min-width:1024px){
+.nav{top:0;right:auto;width:230px;max-width:none;margin:0;flex-direction:column;justify-content:flex-start;gap:8px;padding:28px 14px;border-radius:0;border-top:0;border-right:1px solid var(--line)}
+.nav button{font-size:1.1rem;padding:12px 16px}.nav button:not(.on) small{display:inline}
+body.hasnav .wrap{margin-left:230px;max-width:none;padding:32px clamp(24px,5vw,72px) 60px}
+.wrap>*{max-width:900px;margin-left:auto;margin-right:auto}
+.wrap>.ob{max-width:420px}
+}
+@media (max-height:480px) and (orientation:landscape){.wrap{padding-bottom:90px}.ov>div{max-height:96vh}}
+@media (max-width:380px){
+.wrap{padding-left:12px;padding-right:12px}
+.cg{gap:22px 8px}.cc{padding:16px 6px 10px}.tg{gap:10px}
+.tl{font-size:.7rem;border-radius:16px}.tl span{font-size:1.5rem}
+.board{gap:8px}.it{padding:8px;font-size:.9rem}.it.term{font-size:.92rem}
+.pr{grid-template-columns:1fr auto}.pr .pb{grid-column:1/-1;order:3}
+.ring{gap:10px}.rg{width:64px;height:64px}.rg b{width:46px;height:46px}
+.nav button{padding:8px 10px}.st3 b{font-size:1.1rem}
+}
+@media (min-width:600px) and (max-width:1023px){.board{gap:16px}.col{gap:12px}.ov>div{max-width:460px}}
+@media (min-width:1024px){.board{gap:20px}.col{gap:12px}.ov>div{max-width:480px}}
+@media (max-height:480px) and (orientation:landscape){.hi{font-size:1.2rem}.nav{padding-top:4px;padding-bottom:calc(4px + env(safe-area-inset-bottom,0px))}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.say{text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px}
+.wd{font-size:2.3rem;font-weight:700;line-height:1.15;overflow-wrap:anywhere}
+.sbtn{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.sbtn .btn2{margin:0}
+.mic{min-width:150px}.mic.rec{animation:pl 1s infinite}.btn:disabled{opacity:.6}
+@keyframes pl{50%{box-shadow:0 0 0 10px color-mix(in srgb,var(--coral) 30%,transparent)}}
+.sst{min-height:3em;margin:0;color:var(--mute)}
+.spk{background:none;border:0;padding:0 4px;font-size:1rem}
+@media (max-width:599px){.cg .cc:last-child:nth-child(odd){grid-column:1/-1}}
+.card,.cc,.it,.how,.hd,.bn,.chips span,.bub{box-shadow:0 5px 0 color-mix(in srgb,var(--ink) 14%,transparent)}
+body{background-image:radial-gradient(circle at 22px 22px,rgba(255,255,255,.28) 4px,transparent 5px);background-size:64px 64px}
+.card,.cc{border:0;border-radius:26px}
+.btn{border-radius:18px;font-size:1.05rem;box-shadow:0 5px 0 color-mix(in srgb,var(--coral) 65%,#000)}.btn:active{transform:translateY(3px);box-shadow:0 2px 0 color-mix(in srgb,var(--coral) 65%,#000)}
+.cht{display:inline-block;line-height:0;flex:none}.cht svg{display:block}.m2{display:none}
+.cht.hop{animation:hop .6s}.cht.sad{animation:sd .5s}.cht.sad .m1{display:none}.cht.sad .m2{display:block}
+@keyframes hop{30%{transform:translateY(-16px) rotate(-6deg)}65%{transform:translateY(0) rotate(5deg)}}
+@keyframes sd{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.guide{display:flex;align-items:center;gap:12px;margin:6px 0 10px}
+.bub{position:relative;background:var(--card);border-radius:20px;padding:10px 14px;font-weight:700}
+.bub:before{content:"";position:absolute;left:-8px;top:50%;margin-top:-8px;border:8px solid transparent;border-left:0;border-right-color:var(--card)}
+.cav{width:76px;height:76px;border-radius:50%;border:4px solid #fff;display:grid;place-items:center;overflow:hidden;flex:none}
+.tl .cav{width:64px;height:64px;background:#fff}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 12px}.chips span{background:var(--card);border-radius:999px;padding:4px 12px;font-weight:700}
+.map{position:relative;max-width:440px;margin:14px auto 0;border-radius:30px;border:4px solid #fff;overflow:hidden;background:linear-gradient(180deg,color-mix(in srgb,#cdf2ff 60%,var(--card)),color-mix(in srgb,#9be15d 75%,var(--card)))}
+.map>svg{position:absolute;inset:0;width:100%;height:100%;max-width:none}
+.nd{position:absolute;width:68px;height:68px;margin-left:-34px;border-radius:50%;border:5px solid #fff;background:#cfd8dc;color:#fff;font-size:1.5rem;font-weight:700;display:grid;place-items:center;box-shadow:0 5px 0 rgba(0,0,0,.18)}
+.nd.ok{background:#ffc928}.nd.cur{background:var(--coral);animation:pu 1.4s infinite}.nd.lk{cursor:not-allowed}.nd:active:not(.lk){transform:translateY(3px)}
+.nd small{position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);color:#f5a300;font-size:.95rem;white-space:nowrap;text-shadow:0 1px 0 #fff}
+.rb{position:absolute;top:-12px;right:-12px;font-size:1.2rem;font-style:normal}
+@keyframes pu{50%{box-shadow:0 5px 0 rgba(0,0,0,.18),0 0 0 10px rgba(242,106,82,.28)}}
+.pal{position:absolute;pointer-events:none;animation:bob 1.6s ease-in-out infinite}@keyframes bob{50%{translate:0 -6px}}
+.dc{position:absolute;font-size:1.7rem;font-style:normal;pointer-events:none;opacity:.9}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0 12px}
+.md{background:var(--card);border:3px solid transparent;border-radius:18px;padding:8px 4px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;box-shadow:0 4px 0 color-mix(in srgb,var(--ink) 14%,transparent)}
+.md b{font-size:.85rem;overflow-wrap:anywhere}.md small{font-size:.68rem;text-align:center;line-height:1.25}
+.md.on{border-color:var(--coral);background:color-mix(in srgb,var(--coral) 14%,var(--card))}
+.clk{display:inline-flex;align-items:center;gap:4px;background:var(--card);border-radius:999px;padding:2px 10px 2px 4px;font-weight:700;margin-left:6px}
+.clk.low{color:var(--bad);animation:pu2 .5s infinite}@keyframes pu2{50%{transform:scale(1.12)}}
+#ch{transform-origin:13px 14px}.bar{flex-wrap:wrap}
+.nav button svg{width:34px;height:34px;flex:none}
+.lg{display:flex;gap:6px;justify-content:flex-end;margin-bottom:6px}
+.lg button{background:var(--card);border:3px solid transparent;border-radius:999px;padding:4px 14px;font-weight:700;min-height:38px;box-shadow:0 4px 0 color-mix(in srgb,var(--ink) 14%,transparent)}
+.lg button.on{border-color:var(--coral);background:color-mix(in srgb,var(--coral) 14%,var(--card))}
+.pkg{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;width:100%}
+.pk{background:var(--card);border:3px solid transparent;border-radius:16px;padding:6px 2px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;box-shadow:0 4px 0 color-mix(in srgb,var(--ink) 14%,transparent)}
+.pk .cht svg{width:100%;height:auto;max-width:52px}.pk small{font-size:.68rem;overflow-wrap:anywhere}
+.pk.on{border-color:var(--coral);background:color-mix(in srgb,var(--coral) 14%,var(--card))}
+@media (max-width:340px){.pkg{grid-template-columns:repeat(4,1fr)}}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<nav class="nav hide" id="nav"></nav>
+<div id="ov" class="ov hide"><div id="ovc"></div></div>
+<script>
+const ERAS=["เรเนซองส์","บาโรก","คลาสสิก","โรแมนติก","ศตวรรษที่ 20"];
+const EY=["ค.ศ. 1400–1600","1600–1750","1750–1820","1820–1900","1900 เป็นต้นไป"];
+// นักประพันธ์|บทเพลง ตามยุค (ตรวจกับแหล่งข้อมูลดนตรีศึกษาหลายแห่ง)
+const EP=[
+["Palestrina|Missa Papae Marcelli","Josquin des Prez|Missa Pange lingua","Tallis|Spem in alium","Byrd|Mass for Four Voices","Dowland|Flow, my tears","Lassus|Lagrime di San Pietro"],
+["Bach|Brandenburg Concertos","Vivaldi|The Four Seasons","Handel|Messiah","Purcell|Dido and Aeneas","Pachelbel|Canon in D","Corelli|Concerti Grossi, Op. 6"],
+["Mozart|The Magic Flute","Haydn|Symphony No. 94 “Surprise”","Beethoven|Symphony No. 5","Gluck|Orfeo ed Euridice","Boccherini|Minuet, String Quintet in E","Clementi|Sonatinas for piano"],
+["Chopin|Nocturnes","Schubert|Winterreise","Tchaikovsky|Swan Lake","Mendelssohn|A Midsummer Night’s Dream","Dvořák|Symphony “From the New World”","Verdi|La traviata"],
+["Debussy|Clair de lune","Ravel|Boléro","Stravinsky|The Rite of Spring","Prokofiev|Peter and the Wolf","Gershwin|Rhapsody in Blue","Copland|Appalachian Spring"]];
+const EMAP=[2,2,2,3,3,3,1,1,1,4,4,0,0];
+const sp=a=>a.map(x=>x.split("|"));
+const CATS=[
+{n:"ความเร็วและความดัง",df:"ง่าย",ic:"⚡",col:"#3b82d6",s:1,c:17,u:"คำ",t:sp(["Allegro|เร็ว ร่าเริง","Piano (p)|เบา","Forte (f)|ดัง","Adagio|ช้า สบายๆ","Presto|เร็วมาก","Crescendo|ค่อยๆ ดังขึ้น","Diminuendo|ค่อยๆ เบาลง","Andante|ช้าพอเดิน","Moderato|ความเร็วปานกลาง","Ritardando|ช้าลงทีละน้อย","Accelerando|เร็วขึ้นทีละน้อย","Mezzo forte (mf)|ดังปานกลาง"])},
+{n:"วิธีเล่นและอารมณ์",df:"กลาง",ic:"🎻",col:"#8b7be0",s:35,c:17,u:"คำ",t:sp(["Legato|เชื่อมเสียงราบรื่น","Staccato|เสียงสั้นห้วน","Pizzicato|ดีดสายด้วยนิ้ว","Arco|ใช้คันชักสี","Dolce|หวานนุ่มนวล","Cantabile|เล่นเหมือนร้องเพลง","Espressivo|เล่นอย่างมีอารมณ์","Tremolo|สั่นเสียงซ้ำเร็วๆ","Glissando|ไถเสียงต่อเนื่อง","Maestoso|สง่างาม ยิ่งใหญ่","Agitato|ตื่นเต้น กระวนกระวาย","Con sordino|ใช้ที่เก็บเสียง"])},
+{n:"รูปแบบและการแสดง",df:"ยาก",ic:"🎭",col:"#e0951c",s:69,c:16,u:"คำ",t:sp(["Da capo (D.C.)|กลับไปเล่นตั้งแต่ต้น","Fine|จบ","Coda|ท่อนจบของเพลง","Fermata|ค้างเสียงตามต้องการ","Dal segno (D.S.)|กลับไปที่เครื่องหมาย 𝄋","Tutti|เล่นพร้อมกันทั้งวง","Attacca|ต่อท่อนถัดไปทันที","Divisi|แบ่งแนวเล่นหลายส่วน","Ostinato|แนวซ้ำวนต่อเนื่อง","Volti subito|รีบพลิกหน้าโน้ต","Alla breve|จังหวะ 2 ต่อห้อง","Hemiola|สลับกลุ่มจังหวะ 3 กับ 2"])},
+{n:"เครื่องดนตรี",df:"ง่าย",ic:"🎺",col:"#2fae86",s:18,c:17,u:"คำ",t:sp(["Violin|เครื่องสายเสียงสูงสุดในตระกูล","Piano|คีย์บอร์ดที่ใช้ค้อนตีสาย","Flute|เครื่องลมไม้ ไม่มีลิ้น เป่าข้างปากเป่า","Trumpet|แตรทองเหลืองเสียงสูง","Cello|เครื่องสายเสียงทุ้ม เล่นขณะนั่ง","Harp|เครื่องสายดีดที่มีสายจำนวนมาก","Viola|เครื่องสายเสียงกลาง","Clarinet|เครื่องลมไม้ลิ้นเดี่ยว","Oboe|เครื่องลมไม้ลิ้นคู่เสียงสดใส","Trombone|แตรทองเหลืองมีกระบอกเลื่อน","Timpani|กลองที่ปรับระดับเสียงได้","Double bass|เครื่องสายใหญ่สุด เสียงต่ำสุด","Bassoon|ลมไม้ลิ้นคู่ เสียงต่ำสุดของตระกูล","French horn|แตรทองเหลืองท่อขดกลม","Piccolo|ฟลูตเล็ก เสียงสูงมาก","Tuba|แตรทองเหลืองเสียงต่ำสุด","Xylophone|เครื่องเคาะที่มีแผ่นไม้เรียงเสียง"])},
+{n:"ทฤษฎีเบื้องต้น",df:"กลาง",ic:"📖",col:"#6aa832",s:52,c:17,u:"คำ",t:sp(["Sharp (♯)|ยกเสียงสูงขึ้นครึ่งเสียง","Flat (♭)|ลดเสียงต่ำลงครึ่งเสียง","Rest|ตัวหยุด สัญลักษณ์แทนความเงียบ","Staff|บรรทัด 5 เส้น","Natural (♮)|ยกเลิก ♯ ♭ กลับเป็นเสียงปกติ","Clef|กุญแจ บอกชื่อเสียงของเส้นและช่อง","Measure|ห้องเพลง ระหว่างเส้นกั้นห้อง","Time signature|เครื่องหมายบอกจำนวนจังหวะต่อห้อง","Scale|บันไดเสียง","Octave|ช่วงเสียงห่างกัน 8 ขั้น","Key signature|เครื่องหมายแปลงเสียงต้นบรรทัด","Interval|ระยะห่างระหว่างสองเสียง","Tie|เส้นโยงเสียงเดียวกันให้ต่อกัน","Slur|เส้นโค้งเชื่อมต่างระดับให้ราบรื่น","Dotted note|โน้ตมีจุด เพิ่มค่าอีกครึ่งหนึ่ง","Tonic|โน้ตตัวแรกของบันไดเสียง","Cadence|การลงจบประโยคเพลง","Ledger line|เส้นน้อย เส้นสั้นนอกบรรทัด"])},
+{n:"นักประพันธ์เพลง",df:"ยาก",ic:"🎼",col:"#d94f7d",s:85,c:16,u:"คู่",k:1,t:EP.flatMap((a,e)=>sp(a).map(p=>[...p,e]))}
+];
+const clean=s=>s.replace(/\s*\(.*?\)/g,"").replace(/[♯♭♮]/g,"").trim();
+CATS.forEach((x,i)=>x.lg=i<3?"it-IT":"en-US");
+CATS.push({n:"ฝึกออกเสียง",df:"ท้าทาย",ic:"🎤",col:"#0e9aa7",s:101,c:14,u:"คำ",p:1,
+ t:CATS.slice(0,5).flatMap(x=>x.t.map(p=>[p[0],p[1],x.lg,clean(p[0])])).sort((a,b)=>a[3].length-b[3].length)});
+const TOTAL=CATS.reduce((a,x)=>a+x.c,0);
+// ---- เสียงอ่านตัวอย่าง (TTS) และตรวจการออกเสียง (Speech Recognition) ของเบราว์เซอร์ ----
+function speak(t,lang){try{const ss=window.speechSynthesis;if(!ss)return false;ss.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=lang;u.rate=.85;
+ const vs=ss.getVoices(),k=lang.toLowerCase().replace("_","-"),v=vs.find(v=>v.lang.toLowerCase().replace("_","-")===k)||vs.find(v=>v.lang.toLowerCase().startsWith(k.slice(0,2)));
+ if(v)u.voice=v;ss.speak(u);return true}catch(e){return false}}
+function listen(lang,cb){
+ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!SR){cb({err:"unsupported"});return null}
+ const r=new SR();let got=false;r.lang=lang;r.interimResults=false;r.maxAlternatives=5;r.continuous=false;
+ r.onresult=e=>{got=true;cb({alts:[...e.results[0]].map(a=>a.transcript)})};
+ r.onerror=e=>{if(!got){got=true;cb({err:e.error})}};
+ r.onend=()=>{if(!got){got=true;cb({err:"no-speech"})}};
+ try{r.start()}catch(e){got=true;cb({err:"unsupported"});return null}
+ return r}
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z ]/g,"").replace(/\s+/g," ").trim();
+function lev(a,b){const m=a.length,n=b.length,d=Array.from({length:m+1},(_,i)=>[i]);for(let j=1;j<=n;j++)d[0][j]=j;
+ for(let i=1;i<=m;i++)for(let j=1;j<=n;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[m][n]}
+const sim=(a,b)=>{a=norm(a);b=norm(b);return a&&b?1-lev(a,b)/Math.max(a.length,b.length):0};
+const KINDS=["lion","monkey","frog","bear","sheep","cat","parrot","panda","rabbit","penguin"],AK=()=>S.av||"lion";
+["lion","monkey","frog","bear","sheep","cat","parrot"].forEach((a,i)=>CATS[i].an=a);
+const E2=(x,y)=>`<circle cx="${x}" cy="${y}" r="9" fill="#fff"/><circle cx="${x+1}" cy="${y+1}" r="4.6" fill="#2b2320"/><circle cx="${x+2.5}" cy="${y-1}" r="1.6" fill="#fff"/>`;
+const EAR=(x,c)=>`<circle cx="${x}" cy="26" r="14" fill="#a8622c"/><circle cx="${x}" cy="26" r="7" fill="#f7cfa6"/>`;
+const DA={
+lion:[`<circle cx="50" cy="52" r="47" fill="#e8892b"/><circle cx="22" cy="24" r="11" fill="#f6b73c"/><circle cx="78" cy="24" r="11" fill="#f6b73c"/>`,"#f9c04d",`<ellipse cx="50" cy="67" rx="17" ry="12" fill="#fff3d6"/><path d="M44 60h12l-6 6z" fill="#7a4a2b"/>`,""],
+monkey:[`<circle cx="12" cy="54" r="13" fill="#a8622c"/><circle cx="88" cy="54" r="13" fill="#a8622c"/><circle cx="12" cy="54" r="7" fill="#f7cfa6"/><circle cx="88" cy="54" r="7" fill="#f7cfa6"/>`,"#c27a3b",`<ellipse cx="50" cy="69" rx="25" ry="16" fill="#f7d9b5"/><circle cx="45" cy="62" r="2" fill="#7a4a2b"/><circle cx="55" cy="62" r="2" fill="#7a4a2b"/>`,""],
+frog:[`<circle cx="28" cy="26" r="16" fill="#6fcf3f"/><circle cx="72" cy="26" r="16" fill="#6fcf3f"/>`,"#86e052",E2(28,26)+E2(72,26),"e"],
+bear:[EAR(22)+EAR(78),"#cf8a4a",`<ellipse cx="50" cy="67" rx="17" ry="13" fill="#f7d9b5"/><ellipse cx="50" cy="60" rx="6" ry="4" fill="#5a3418"/>`,""],
+sheep:[`<ellipse cx="9" cy="50" rx="9" ry="6" fill="#ffb3c1"/><ellipse cx="91" cy="50" rx="9" ry="6" fill="#ffb3c1"/>`+[[20,38],[80,38],[30,20],[50,14],[70,20],[16,62],[84,62]].map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="17" fill="#fff"/>`).join(""),"#ffe0c7",`<circle cx="40" cy="24" r="12" fill="#fff"/><circle cx="60" cy="24" r="12" fill="#fff"/><circle cx="50" cy="20" r="12" fill="#fff"/>`,""],
+cat:[`<path d="M12 44L18 6L46 22z" fill="#f59a3d"/><path d="M88 44L82 6L54 22z" fill="#f59a3d"/><path d="M22 30L22 16L34 24z" fill="#ffb3c1"/><path d="M78 30L78 16L66 24z" fill="#ffb3c1"/>`,"#ffb35c",`<path d="M50 24v10M40 26l2 9M60 26l-2 9" stroke="#e07a1f" stroke-width="3" stroke-linecap="round"/><path d="M46 60h8l-4 5z" fill="#ff7a8a"/><path d="M14 62h16M14 70l15-3M86 62H70M86 70l-15-3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>`,""],
+parrot:[`<ellipse cx="42" cy="12" rx="5" ry="13" fill="#5b3fd0" transform="rotate(-25 42 12)"/><ellipse cx="52" cy="9" rx="5" ry="14" fill="#7c5cf0" /><ellipse cx="62" cy="12" rx="5" ry="13" fill="#5b3fd0" transform="rotate(25 62 12)"/>`,"#8b6cf0",`<path d="M40 54Q50 46 60 54Q58 76 50 80Q42 76 40 54z" fill="#ffb02e"/><path d="M45 66h10" stroke="#e08a00" stroke-width="2.5" stroke-linecap="round"/>`,"m"]};
+function animal(k,z){const[b,f,x,fl]=DA[k];return `<svg width="${z}" height="${z}" viewBox="0 0 100 100" aria-hidden="true">${b}<ellipse cx="50" cy="56" rx="36" ry="33" fill="${f}"/>${x}${fl==="e"?"":E2(36,47)+E2(64,47)}<circle cx="24" cy="62" r="6" fill="#ff7a8a" opacity=".5"/><circle cx="76" cy="62" r="6" fill="#ff7a8a" opacity=".5"/>${fl==="m"?"":'<path class="m1" d="M43 70q7 7 14 0" stroke="#7a3b2b" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse class="m2" cx="50" cy="73" rx="5" ry="6" fill="#7a3b2b"/>'}</svg>`}
+Object.assign(DA,{
+panda:[`<circle cx="22" cy="24" r="13" fill="#2b2320"/><circle cx="78" cy="24" r="13" fill="#2b2320"/>`,"#eef2f5",`<ellipse cx="36" cy="48" rx="11" ry="13" fill="#2b2320" transform="rotate(20 36 48)"/><ellipse cx="64" cy="48" rx="11" ry="13" fill="#2b2320" transform="rotate(-20 64 48)"/><ellipse cx="50" cy="62" rx="5" ry="3.5" fill="#2b2320"/>`,""],
+rabbit:[`<ellipse cx="34" cy="18" rx="9" ry="21" fill="#fbe4ee"/><ellipse cx="66" cy="18" rx="9" ry="21" fill="#fbe4ee"/><ellipse cx="34" cy="19" rx="4.5" ry="13" fill="#ffb3c1"/><ellipse cx="66" cy="19" rx="4.5" ry="13" fill="#ffb3c1"/>`,"#fbe4ee",`<path d="M46 60h8l-4 5z" fill="#ff7a8a"/><rect x="46.5" y="71" width="7" height="8" rx="2" fill="#fff" stroke="#e5c6d3"/>`,""],
+penguin:[`<ellipse cx="50" cy="56" rx="40" ry="38" fill="#2f3e63"/>`,"#fff",`<path d="M16 50Q18 18 50 20Q82 18 84 50Q70 36 50 38Q30 36 16 50z" fill="#2f3e63"/><path d="M43 58Q50 54 57 58Q55 68 50 70Q45 68 43 58z" fill="#ffa726"/>`,"m"]});
+const AVN={lion:"สิงโต",monkey:"ลิง",frog:"กบ",bear:"หมี",sheep:"แกะ",cat:"แมว",parrot:"นกแก้ว",panda:"แพนด้า",rabbit:"กระต่าย",penguin:"เพนกวิน"};
+const pickBar=()=>`<div class="pkg">${KINDS.map(k=>`<button class="pk${AK()===k?" on":""}" data-act="pick" data-k="${k}" aria-label="${AVN[k]}"><span class="cht">${animal(k,52)}</span><small>${AVN[k]}</small></button>`).join("")}</div>`;
+const OKS=["เก่งมาก!","ใช่เลย!","เยี่ยมไปเลย!","ถูกต้อง!"],NO=["ลองอีกครั้งนะ","ไม่เป็นไร สู้ๆ!","เกือบแล้ว!"];
+const react=(ok,t)=>{const c=$("gd"),b=$("bb");if(!c)return;c.classList.remove("hop","sad");void c.offsetWidth;c.classList.add(ok?"hop":"sad");const a=ok?OKS:NO;b.textContent=t||a[Math.floor(Math.random()*a.length)]};
+const $=id=>document.getElementById(id);
+const setNav=on=>{$("nav").classList.toggle("hide",!on);document.body.classList.toggle("hasnav",!!on)};
+let S={name:"",stars:{},demo:false,streak:0,last:0,lang:/^th/i.test(navigator.language)?"th":"en"};
+try{S=Object.assign(S,JSON.parse(localStorage.getItem("mtm4")||"{}"))}catch(e){}
+const save=()=>{try{localStorage.setItem("mtm4",JSON.stringify(S))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function shuf(a,r){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+const setOf=L=>CATS.findIndex(x=>L>=x.s&&L<x.s+x.c);
+const isRev=L=>{const x=CATS[setOf(L)],j=L-x.s;return!x.p&&((j+1)%6===0||j===x.c-1)};
+const nOf=L=>{if(CATS[setOf(L)].k)return 3;const p=loc(L);return(p<=6?3:p<=12?4:5)+(isRev(L)?1:0)};
+const mOf=L=>{const j=L-CATS[setOf(L)].s;return j-Math.floor(j/6)};
+const loc=L=>L-CATS[setOf(L)].s+1;
+const lvLabel=L=>{const x=CATS[setOf(L)],rv=isRev(L);if(x.p)return"พูดตาม 5 คำ";return(x.k?(rv?"ทบทวนทุกยุค":"ยุค"+ERAS[EMAP[mOf(L)]]):(rv?"ด่านทบทวน":"ด่านปกติ"))+" · "+nOf(L)+" คู่"};
+const done=i=>{const x=CATS[i];let n=0;for(let L=x.s;L<x.s+x.c;L++)if(S.stars[L])n++;return n};
+const total=()=>CATS.reduce((a,_,i)=>a+done(i),0);
+const starsN=()=>Object.values(S.stars).reduce((a,b)=>a+b,0);
+const day=()=>Math.floor(Date.now()/864e5);
+const streak=()=>S.last>=day()-1?S.streak:0;
+const nextIn=i=>{const x=CATS[i];for(let L=x.s;L<x.s+x.c;L++)if(!S.stars[L])return L;return 0};
+const nextL=()=>{if(S.lc!==undefined){const n=nextIn(S.lc);if(n)return n}for(let i=0;i<CATS.length;i++){const n=nextIn(i);if(n)return n}return 0};
+function build(L){
+ const r=rng(L*7919+13),x=CATS[setOf(L)],j=L-x.s,n=nOf(L),rev=isRev(L),m=mOf(L);
+ if(x.k){if(rev){const es=EMAP.slice(0,Math.min(m,13));return shuf(x.t.filter(p=>es.includes(p[2])),r).slice(0,3)}
+  return shuf(x.t.filter(p=>p[2]===EMAP[m]),r).slice(0,3)}
+ const pool=x.t.slice(0,Math.max(n,Math.ceil(x.t.length*(.4+.6*j/(x.c-1)))));
+ if(rev)return shuf(pool,r).slice(0,n);
+ const f=pool.slice(-2);return f.concat(shuf(pool.filter(t=>!f.includes(t)),r)).slice(0,n);
+}
+const mascot=z=>animal("lion",z);
+const eyes=()=>'<svg class="ey" width="44" height="22" viewBox="0 0 44 22"><g fill="#fff" stroke="#2b2320" stroke-width="2"><circle cx="11" cy="11" r="9"/><circle cx="33" cy="11" r="9"/></g><circle cx="13" cy="12" r="3.5" fill="#2b2320"/><circle cx="35" cy="12" r="3.5" fill="#2b2320"/></svg>';
+const bar=(i,w)=>`<div class="pb"><i style="width:${done(i)/CATS[i].c*100}%;${w?"":"background:"+CATS[i].col}"></i></div>`;
+const badges=()=>CATS.map((x,i)=>`<span class="${done(i)===x.c?"on":""}" title="${x.n}">🏅</span>`).join("")+`<span class="${total()===TOTAL?"on":""}">🏆</span>`;
+const onboard=()=>`<div class="ob">${langBar()}<div class="cht hop" id="pv">${animal(AK(),150)}</div><h2>สวัสดี! เลือกตัวละครของคุณ<br>แล้วบอกชื่อหน่อยนะ</h2>${pickBar()}<input id="nm" maxlength="20" placeholder="พิมพ์ชื่อของคุณ"><button class="btn" data-act="name" style="width:100%">เริ่มเลย</button></div>`;
+const catCard=(x,i)=>`<button class="cc" data-act="cat" data-i="${i}"><div class="cav" style="background:${x.col}">${animal(x.an,66)}</div><b>${x.n}</b><small>${x.df} · ${x.t.length} ${x.u}</small>${bar(i)}<small>${done(i)}/${x.c} ด่าน</small></button>`;
+function homeV(){const t=total(),nx=nextL();
+ return `${langBar()}<div class="guide"><div class="cht">${animal(AK(),84)}</div><div class="bub">สวัสดี ${esc(S.name)}!<br>วันนี้เล่นอะไรดี?</div></div><div class="chips"><span>⭐ ${starsN()}</span><span>🔥 ${streak()}</span><span>❤️ ${total()}/${TOTAL}</span></div><h3 style="margin:6px 0">เลือกระดับ</h3>${modeBar()}
+<div class="card ring"><div class="rg" style="--p:${Math.round(t/TOTAL*100)}"><b>${Math.round(t/TOTAL*100)}%</b></div><div><b>ผ่านแล้ว ${t} / ${TOTAL} ด่าน</b><div class="sub">ดาว ${starsN()} / ${TOTAL*3}</div>${nx?`<button class="btn sm" data-act="lv" data-l="${nx}">เล่นต่อ · ${CATS[setOf(nx)].n} ด่าน ${loc(nx)}</button>`:"🎉 ครบทุกด่านแล้ว"}</div></div>
+<h3>หมวดของคุณ</h3><div class="cg">${CATS.map(catCard).join("")}</div>`}
+const coursesV=()=>`<h1 class="hi">คอร์สทั้งหมด</h1><p class="sub">เลือกหมวดที่อยากฝึก</p><div class="tg">${CATS.map((x,i)=>`<button class="tl" style="background:${x.col};--r:${i%2?3:-3}deg" data-act="cat" data-i="${i}"><span class="cav">${animal(x.an,56)}</span>${x.n}</button>`).join("")}</div>`;
+function lessonsV(){const i=V.cat,x=CATS[i],H=104,cur=nextIn(i),P=[];let nd="",dc="";
+ for(let k=0;k<x.c;k++){const L=x.s+k,px=50+29*Math.sin(k*1.15),py=k*H+56,lock=!S.demo&&k>0&&!S.stars[L-1],st=S.stars[L]||0;P.push([px,py]);
+  nd+=`<button class="nd${lock?" lk":""}${st?" ok":""}${L===cur?" cur":""}" style="left:${px}%;top:${py-34}px" ${lock?"disabled":""} data-act="lv" data-l="${L}" aria-label="ด่าน ${k+1}" title="${lvLabel(L)}">${lock?"🔒":k+1}${isRev(L)?'<i class="rb">🎁</i>':""}${st?`<small>${"★".repeat(st)}</small>`:""}</button>`;
+  if(L===cur)nd+=`<div class="pal cht" style="left:calc(${px}% + ${px<50?44:-112}px);top:${py-40}px">${animal(AK(L),68)}</div>`;
+  dc+=`<i class="dc" style="left:${px<50?80:6}%;top:${py-10}px">${["🌳","🌷","🍄","🌻"][k%4]}</i>`}
+ let d=`M${P[0][0]} ${P[0][1]}`;for(let k=1;k<P.length;k++){const p=P[k-1],q=P[k],m=(p[1]+q[1])/2;d+=`C${p[0]} ${m} ${q[0]} ${m} ${q[0]} ${q[1]}`}
+ const HT=x.c*H+30;
+ return `<div class="hd" style="background:${x.col}"><button class="ghost" data-act="back">←</button><div class="cav" style="background:rgba(255,255,255,.25)">${animal(x.an,64)}</div><h2>${x.n}</h2><p>${x.df} · ด่าน 1–${x.c}${x.k?" · 5 ยุค":""}</p>${bar(i,1)}<small>ผ่านแล้ว ${done(i)} จาก ${x.c} ด่าน</small></div>${modeBar()}<h3>เส้นทางผจญภัย</h3><div class="map" style="height:${HT}px">${dc}<svg viewBox="0 0 100 ${HT}" preserveAspectRatio="none"><path d="${d}" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="22" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="${d}" fill="none" stroke="#f7c948" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>${nd}</div>`}
+const progressV=()=>`<div class="bn"><span>🔥</span><div><b>ต่อเนื่อง ${streak()} วัน</b><div>เล่นทุกวันเพื่อรักษาสถิติ</div></div></div><h3>ตามหมวด</h3>${CATS.map((x,i)=>`<div class="pr"><span>${x.ic} ${x.n}</span>${bar(i)}<small>${Math.round(done(i)/x.c*100)}%</small></div>`).join("")}<h3>เหรียญที่ได้</h3><div class="medals">${badges()}</div><p class="sub">ผ่านครบทุกด่านในหมวดเพื่อรับเหรียญ</p>`;
+const profileV=()=>`<div class="ob" style="padding-top:10px;gap:4px"><div class="cht">${animal(AK(),96)}</div><h2>${esc(S.name)}</h2></div><div class="card st3"><div><b>${total()}</b><small>ด่านที่ผ่าน</small></div><div><b>${starsN()}</b><small>ดาว</small></div><div><b>${streak()}</b><small>วันต่อเนื่อง</small></div></div><h3>ตู้เหรียญ</h3><div class="medals">${badges()}</div><h3>ตัวละครของฉัน</h3>${pickBar()}<h3>ตั้งค่า</h3>${langBar()}<button class="btn2" data-act="rename">แก้ชื่อ</button><button class="btn2" data-act="demo">${S.demo?"ปิดโหมดเปิดทุกด่าน":"เปิดทุกด่าน (เดโม)"}</button><button class="btn2" data-act="snd">${S.mute?"เปิดเสียงอ่านอัตโนมัติ":"ปิดเสียงอ่านอัตโนมัติ"}</button><button class="btn2" data-act="reset">ล้างความคืบหน้า</button><p class="sub" style="margin-top:18px">ความหมายเป็นคำอธิบายสรุปของผู้เขียน ควรตรวจกับ Oxford Dictionary of Music ก่อนใช้งานจริง</p>`;
+let V={tab:"home",cat:null},G=null;
+function render(){
+ if(G&&G.rec)try{G.rec.abort()}catch(e){}
+ try{speechSynthesis.cancel()}catch(e){}
+ G=null;const a=$("app"),n=$("nav");
+ if(!S.name){a.innerHTML=onboard();setNav(0);return}
+ setNav(1);
+ a.innerHTML=V.cat!==null?lessonsV():{home:homeV,courses:coursesV,progress:progressV,profile:profileV}[V.tab]();
+ n.innerHTML=[["home","🏠","หน้าหลัก"],["courses","📚","คอร์ส"],["progress","🏆","ความก้าวหน้า"],["profile","👤","โปรไฟล์"]].map(t=>`<button class="${t[0]===V.tab&&V.cat===null?"on":""}" data-act="tab" data-v="${t[0]}">${NI[t[0]]}<small>${t[2]}</small></button>`).join("");
+ scrollTo(0,0);
+}
+function start(L){
+ if(CATS[setOf(L)].p)return startSay(L);
+ const pick=build(L),x=CATS[setOf(L)],r=rng(L*31+7),rev=isRev(L),ids=pick.map((_,i)=>i);
+ G={L,pick,mis:0,done:0,term:null,max:loc(L)<=8?4:3};S.lc=setOf(L);save();modeInit(G);
+ setNav(0);
+ $("app").innerHTML=`<div class="bar"><button class="ghost" data-act="quit">← ออก</button><b>ด่าน ${loc(L)}</b><span><span id="hp"></span>${clk()}</span></div><p class="sub">${x.n} · ${lvLabel(L)}</p><div class="pb"><i id="pg"></i></div><div class="guide"><div class="cht" id="gd">${animal(AK(L),84)}</div><div class="bub" id="bb">มาจับคู่กันเลย!</div></div><p class="how">แตะ${x.k?"ชื่อนักประพันธ์":"ศัพท์"}ทางซ้าย แล้วแตะ${x.k?"บทเพลง":"ความหมาย"}ทางขวาที่ตรงกัน</p>
+<div class="board"><div class="col">${shuf(ids,r).map(i=>`<button class="it term" data-t="${i}">${pick[i][0]}${rev&&x.k?`<small>${ERAS[pick[i][2]]}</small>`:""}</button>`).join("")}</div><div class="col">${shuf(ids,r).map(i=>`<button class="it" data-m="${i}">${pick[i][1]}</button>`).join("")}</div></div>`;
+ hp();prog();scrollTo(0,0);
+ if(L-x.s<6&&!rev)ov(`<div class="cht hop">${animal(AK(L),88)}</div><h2>📖 ${x.k?"ยุค"+ERAS[EMAP[mOf(L)]]:"ศัพท์ในด่านนี้"}</h2><p class="sub">${x.k?EY[EMAP[mOf(L)]]+" · ":""}ดูให้จำก่อนเริ่มเล่น</p><div class="ls">${pick.map((p,i)=>`<div><b>${p[0]}</b> <button class="spk" data-act="hear" data-w="${i}" aria-label="ฟังเสียง">🔊</button> — ${p[1]}</div>`).join("")}</div><button class="btn" data-act="close">เริ่มเล่น</button>`);
+}
+function startSay(L){
+ const x=CATS[setOf(L)],j=L-x.s,pick=x.t.slice(j*5,j*5+5);
+ G={L,pick,mis:0,done:0,i:0,tries:0,max:6,say:1,nosr:0,busy:0};S.lc=setOf(L);save();modeInit(G);setNav(0);
+ $("app").innerHTML=`<div class="bar"><button class="ghost" data-act="quit">← ออก</button><b>ด่าน ${loc(L)}</b><span><span id="hp"></span>${clk()}</span></div><p class="sub">${x.n} · ${lvLabel(L)}</p><div class="pb"><i id="pg"></i></div><p class="how">ฟังตัวอย่าง กดไมค์แล้วพูดตาม ให้ AI ตรวจการออกเสียง (พูดผิดเสียหัวใจ 1 ดวง)</p><div class="guide"><div class="cht" id="gd">${animal(AK(L),84)}</div><div class="bub" id="bb">พูดตามฉันนะ!</div></div><div class="card say" id="sy"></div>`;
+ hp();prog();scrollTo(0,0);showWord();
+}
+function showWord(msg,quiet){
+ const g=G,p=g.pick[g.i];
+ $("sy").innerHTML=`<div class="wd">${esc(p[0])}</div><p class="sub">${esc(p[1])}</p><div class="sbtn"><button class="btn2" data-act="hear">🔊 ฟังตัวอย่าง</button><button class="btn mic" id="mic" data-act="mic">🎤 กดแล้วพูด</button></div><p class="sst" id="st" aria-live="polite">${esc(msg||"คำที่ "+(g.i+1)+" / "+g.pick.length+" · ฟังตัวอย่างก่อน แล้วพูดตามให้ชัด")}</p>${g.nosr?'<button class="btn2" data-act="selfok">ฉันออกเสียงได้แล้ว (ตรวจเอง)</button>':""}<button class="ghost" data-act="skipw">ข้ามคำนี้</button>`;
+ if(!quiet&&!S.mute)speak(p[3],p[2]);
+}
+function adv(g){if(G!==g)return;g.i++;g.tries=0;g.busy=0;if(g.i>=g.pick.length)end(true);else showWord()}
+function micGo(){
+ const g=G;if(!g||g.busy)return;const p=g.pick[g.i];
+ try{speechSynthesis.cancel()}catch(e){}
+ g.busy=1;$("mic").classList.add("rec");$("st").textContent="🎧 กำลังฟัง… พูดได้เลย";
+ g.rec=listen(p[2],res=>{
+  if(G!==g)return;g.busy=0;
+  if(res.err){
+   if(res.err==="aborted"){showWord("",1);return}
+   if(res.err==="no-speech"){showWord("ไม่ได้ยินเสียง ลองกดไมค์แล้วพูดอีกครั้ง",1);return}
+   g.nosr=1;
+   showWord(res.err==="unsupported"?"เบราว์เซอร์นี้ยังไม่รองรับการตรวจเสียง (ลองใช้ Chrome / Edge / Safari) — ตรวจเองแทนได้":res.err==="not-allowed"||res.err==="service-not-allowed"?"ยังไม่ได้อนุญาตให้ใช้ไมโครโฟน — อนุญาตในเบราว์เซอร์ หรือตรวจเองแทนได้":"เชื่อมต่อบริการตรวจเสียงไม่ได้ — ตรวจเองแทนได้",1);return}
+  const heard=res.alts[0],best=Math.max(...res.alts.map(a=>sim(a,p[3])));
+  if(best>=.7){g.busy=1;g.done++;prog();react(1,"ถูกต้อง เก่งมาก!");$("mic").classList.remove("rec");$("st").textContent="✅ ถูกต้อง! ได้ยินว่า “"+heard+"”";setTimeout(()=>adv(g),1000)}
+  else{g.mis++;g.tries++;hp();react(0,"ลองอีกครั้งนะ");
+   if(g.mis>=g.max){g.busy=1;$("st").textContent="❌ ได้ยินว่า “"+heard+"”";setTimeout(()=>{if(G===g)end(false)},800);return}
+   if(g.tries>=3){g.busy=1;g.done++;prog();$("st").textContent="เฉลย: อ่านว่า “"+p[3]+"” — ไปคำถัดไป";speak(p[3],p[2]);setTimeout(()=>adv(g),1800)}
+   else showWord("❌ ได้ยินว่า “"+heard+"” ลองฟังตัวอย่างแล้วพูดอีกครั้ง (เหลือ "+(3-g.tries)+" ครั้ง)",1)}
+ });
+}
+const FC=(x,y)=>`<circle cx="${x-4}" cy="${y}" r="1.7" fill="#2b2320"/><circle cx="${x+4}" cy="${y}" r="1.7" fill="#2b2320"/><path d="M${x-3} ${y+3.5}q3 3 6 0" stroke="#2b2320" stroke-width="1.6" fill="none" stroke-linecap="round"/>`;
+const NV=b=>`<svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="21" fill="#fff"/>${b}</svg>`;
+const NI={
+home:NV(`<rect x="24" y="8" width="4.5" height="23" rx="2" fill="#f26a52"/><path d="M28 8q11 3 8 14q-3-7-8-7z" fill="#f26a52"/><ellipse cx="17" cy="31" rx="10" ry="8" fill="#f26a52"/>${FC(17,30)}`),
+courses:NV(`<path d="M11 7l9 9M33 7l-9 9" stroke="#e0a020" stroke-width="3" stroke-linecap="round"/><rect x="9" y="19" width="26" height="17" rx="4" fill="#3b82d6"/><ellipse cx="22" cy="19" rx="13" ry="5" fill="#8fc3f5"/><path d="M13 19v17M31 19v17" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>${FC(22,27)}`),
+progress:NV(`<path d="M22 5l5.2 10.6 11.6 1.7-8.4 8.2 2 11.6L22 31.6l-10.4 5.5 2-11.6-8.4-8.2 11.6-1.7z" fill="#ffc928"/>${FC(22,23)}<circle cx="14" cy="26" r="2.4" fill="#ff7a8a" opacity=".5"/><circle cx="30" cy="26" r="2.4" fill="#ff7a8a" opacity=".5"/>`),
+profile:NV(`<circle cx="22" cy="25" r="11" fill="#f9c04d"/><path d="M10 24a12 12 0 0 1 24 0" stroke="#7c5cf0" stroke-width="3.5" fill="none"/><rect x="6.5" y="22" width="6" height="10" rx="3" fill="#7c5cf0"/><rect x="31.5" y="22" width="6" height="10" rx="3" fill="#7c5cf0"/>${FC(22,25)}`)};
+const MODES={easy:{n:"Easy",d:"ไม่จำกัดเวลา · หัวใจเพิ่ม",a:"sheep",h:2,t:0},mid:{n:"Intermediate",d:"จับเวลา · ปกติ",a:"cat",h:0,t:14},hard:{n:"Hard",d:"เวลาน้อย · หัวใจลด",a:"lion",h:-1,t:8}};
+const modeBar=()=>`<div class="modes">${Object.keys(MODES).map(k=>`<button class="md${(S.mode||"easy")===k?" on":""}" data-act="mode" data-m="${k}"><span class="cht">${animal(MODES[k].a,38)}</span><b>${MODES[k].n}</b><small>${MODES[k].d}</small></button>`).join("")}</div>`;
+const fmt=s=>Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0");
+const clk=()=>`<span class="clk"><svg width="28" height="28" viewBox="0 0 26 26"><path d="M5 5L2 8M21 5l3 3" stroke="#f26a52" stroke-width="3" stroke-linecap="round"/><circle cx="13" cy="14" r="10" fill="#fff" stroke="#f26a52" stroke-width="3"/><line id="ch" x1="13" y1="14" x2="13" y2="8" stroke="#2b2320" stroke-width="2.5" stroke-linecap="round"/></svg><b id="tm">${fmt(G.lim||0)}</b></span>`;
+let TM=0;
+function modeInit(g){const m=MODES[S.mode||"easy"];g.max=Math.max(2,g.max+m.h);g.el=0;g.over=0;g.to=0;g.lim=m.t?Math.round(g.pick.length*(g.say?m.t*2.2:m.t)):0;if(!TM)TM=setInterval(tick,250)}
+function tick(){if(!G||G.over||!$("ov").classList.contains("hide"))return;G.el+=.25;const r=G.lim?Math.max(0,G.lim-G.el):G.el,t=$("tm");if(!t)return;
+ t.textContent=fmt(G.lim?Math.ceil(r):r);$("ch").style.transform=`rotate(${G.el*6}deg)`;const c=document.querySelector(".clk");if(c)c.classList.toggle("low",!!G.lim&&r<=5);
+ if(G.lim&&r<=0){G.to=1;end(false)}}
+const ov=h=>{$("ovc").innerHTML=h;$("ov").classList.remove("hide")};
+const hp=()=>$("hp").textContent="❤️".repeat(G.max-G.mis)+"🤍".repeat(G.mis);
+const prog=()=>$("pg").style.width=(G.done/G.pick.length*100)+"%";
+function end(win){
+ if(G.over)return;G.over=1;let s=0;
+ if(win){s=G.mis===0?3:G.mis===1?2:1;S.stars[G.L]=Math.max(S.stars[G.L]||0,s);const d=day();if(S.last!==d){S.streak=S.last===d-1?S.streak+1:1;S.last=d}save()}
+ const x=CATS[setOf(G.L)],nx=win&&G.L<x.s+x.c-1;
+ ov(`<div class="cht ${win?"hop":"sad"}">${animal(AK(G.L),96)}</div><h2>${win?"ผ่านด่าน! 🎉":G.to?"หมดเวลา ⏰":"หัวใจหมด 💔"}</h2><div class="stars">${win?"★".repeat(s)+"☆".repeat(3-s):""}</div><p class="sub">${win?"ผิด "+G.mis+" ครั้ง · เวลา "+fmt(G.el):"ลองใหม่อีกครั้ง ดูเฉลยด้านล่าง"}</p>${win?"":`<div class="ls">${G.pick.map(p=>`<div><b>${p[0]}</b> — ${p[1]}</div>`).join("")}</div>`}${nx?`<button class="btn" data-act="next">ด่านถัดไป</button> `:""}<button class="btn2" data-act="again">เล่นซ้ำ</button><button class="btn2" data-act="lvs">เลือกด่าน</button>`);
+}
+document.addEventListener("click",e=>{
+ const b=e.target.closest("button");if(!b)return;const d=b.dataset;
+ switch(d.act){
+  case"name":{const v=$("nm").value.trim();if(!v){$("nm").focus();return}S.name=v;save();V={tab:"home",cat:null};render();return}
+  case"tab":V={tab:d.v,cat:null};render();return;
+  case"cat":V.cat=+d.i;render();return;
+  case"back":V.cat=null;render();return;
+  case"lv":start(+d.l);return;
+  case"quit":case"lvs":$("ov").classList.add("hide");render();return;
+  case"close":$("ov").classList.add("hide");return;
+  case"pick":{S.av=d.k;save();if(S.name){render();return}document.querySelectorAll(".pk").forEach(x=>x.classList.toggle("on",x.dataset.k===d.k));const p=$("pv");p.innerHTML=animal(d.k,150);p.classList.remove("hop");void p.offsetWidth;p.classList.add("hop");return}
+  case"lang":S.lang=d.g;save();applyLang();render();return;
+  case"mode":S.mode=d.m;save();render();return;
+  case"snd":S.mute=!S.mute;save();render();return;
+  case"hear":{if(!G)return;if(G.say){const p=G.pick[G.i];speak(p[3],p[2])}else if(d.w!==undefined){const p=G.pick[+d.w];speak(clean(p[0]),CATS[setOf(G.L)].lg)}return}
+  case"mic":micGo();return;
+  case"selfok":{if(!G||!G.say||G.busy)return;const g=G;g.busy=1;g.done++;prog();setTimeout(()=>adv(g),200);return}
+  case"skipw":{if(!G||!G.say)return;const g=G;g.mis++;hp();if(g.mis>=g.max){end(false);return}g.done++;prog();adv(g);return}
+  case"next":$("ov").classList.add("hide");start(G.L+1);return;
+  case"again":$("ov").classList.add("hide");start(G.L);return;
+  case"rename":S.name="";save();render();return;
+  case"demo":S.demo=!S.demo;save();render();return;
+  case"reset":if(b.dataset.c){S.stars={};S.streak=0;S.last=0;save();render()}else{b.dataset.c=1;b.textContent="แตะอีกครั้งเพื่อยืนยัน"}return;
+ }
+ if(!G||b.classList.contains("done"))return;
+ if(d.t!==undefined){document.querySelectorAll(".term.sel").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");G.term=d.t;if(!S.mute)speak(clean(G.pick[+d.t][0]),CATS[setOf(G.L)].lg);return}
+ if(d.m!==undefined&&G.term!==null){
+  const tb=document.querySelector(`.term[data-t="${G.term}"]`);
+  if(d.m===G.term){tb.classList.remove("sel");tb.classList.add("done");b.classList.add("done");G.term=null;G.done++;prog();react(1);if(G.done===G.pick.length)setTimeout(()=>end(true),350)}
+  else{G.mis++;hp();react(0);b.classList.add("bad");tb.classList.add("bad");setTimeout(()=>{b.classList.remove("bad");tb.classList.remove("bad")},400);if(G.mis>=G.max)setTimeout(()=>end(false),450)}
+ }
+});
+// ================= ภาษา / Language (TH · EN) =================
+const langBar=()=>`<div class="lg">${[["th","ไทย"],["en","English"]].map(l=>`<button class="${S.lang===l[0]?"on":""}" data-act="lang" data-g="${l[0]}">${l[1]}</button>`).join("")}</div>`;
+const applyLang=()=>{document.documentElement.lang=S.lang;document.title=S.lang==="en"?"Music Terms Puzzle":"ปริศนาศัพท์ดนตรี"};
+const EN={"เร็ว ร่าเริง":"Fast and cheerful","เบา":"Soft","ดัง":"Loud","ช้า สบายๆ":"Slow and relaxed","เร็วมาก":"Very fast","ค่อยๆ ดังขึ้น":"Gradually louder","ค่อยๆ เบาลง":"Gradually softer","ช้าพอเดิน":"At a walking pace","ความเร็วปานกลาง":"Moderate speed","ช้าลงทีละน้อย":"Gradually slower","เร็วขึ้นทีละน้อย":"Gradually faster","ดังปานกลาง":"Moderately loud",
+"เชื่อมเสียงราบรื่น":"Smooth and connected","เสียงสั้นห้วน":"Short and detached","ดีดสายด้วยนิ้ว":"Plucked with the fingers","ใช้คันชักสี":"Played with the bow","หวานนุ่มนวล":"Sweet and gentle","เล่นเหมือนร้องเพลง":"Played like singing","เล่นอย่างมีอารมณ์":"Played with expression","สั่นเสียงซ้ำเร็วๆ":"Rapidly repeated notes","ไถเสียงต่อเนื่อง":"Sliding between notes","สง่างาม ยิ่งใหญ่":"Majestic and grand","ตื่นเต้น กระวนกระวาย":"Agitated, restless","ใช้ที่เก็บเสียง":"Using a mute",
+"กลับไปเล่นตั้งแต่ต้น":"Go back to the beginning","จบ":"The end","ท่อนจบของเพลง":"The closing section","ค้างเสียงตามต้องการ":"Hold the note as long as desired","กลับไปที่เครื่องหมาย 𝄋":"Go back to the sign 𝄋","เล่นพร้อมกันทั้งวง":"Everyone plays together","ต่อท่อนถัดไปทันที":"Go straight on to the next part","แบ่งแนวเล่นหลายส่วน":"Split into several parts","แนวซ้ำวนต่อเนื่อง":"A continuously repeating pattern","รีบพลิกหน้าโน้ต":"Turn the page quickly","จังหวะ 2 ต่อห้อง":"Two beats per measure","สลับกลุ่มจังหวะ 3 กับ 2":"Switching between groups of 3 and 2",
+"เครื่องสายเสียงสูงสุดในตระกูล":"Highest-pitched string instrument","คีย์บอร์ดที่ใช้ค้อนตีสาย":"Keyboard that strikes strings with hammers","เครื่องลมไม้ ไม่มีลิ้น เป่าข้างปากเป่า":"Reedless woodwind blown across the side hole","แตรทองเหลืองเสียงสูง":"High-pitched brass horn","เครื่องสายเสียงทุ้ม เล่นขณะนั่ง":"Deep string instrument played seated","เครื่องสายดีดที่มีสายจำนวนมาก":"Plucked instrument with many strings","เครื่องสายเสียงกลาง":"Mid-range string instrument","เครื่องลมไม้ลิ้นเดี่ยว":"Single-reed woodwind","เครื่องลมไม้ลิ้นคู่เสียงสดใส":"Bright double-reed woodwind","แตรทองเหลืองมีกระบอกเลื่อน":"Brass horn with a slide","กลองที่ปรับระดับเสียงได้":"Drum that can be tuned to pitches","เครื่องสายใหญ่สุด เสียงต่ำสุด":"Largest, lowest-pitched string instrument","ลมไม้ลิ้นคู่ เสียงต่ำสุดของตระกูล":"Lowest double-reed woodwind","แตรทองเหลืองท่อขดกลม":"Brass horn with coiled tubing","ฟลูตเล็ก เสียงสูงมาก":"Small flute, very high","แตรทองเหลืองเสียงต่ำสุด":"Lowest-pitched brass horn","เครื่องเคาะที่มีแผ่นไม้เรียงเสียง":"Percussion with tuned wooden bars",
+"ยกเสียงสูงขึ้นครึ่งเสียง":"Raises the pitch by a half step","ลดเสียงต่ำลงครึ่งเสียง":"Lowers the pitch by a half step","ตัวหยุด สัญลักษณ์แทนความเงียบ":"A symbol for silence","บรรทัด 5 เส้น":"The 5-line staff","ยกเลิก ♯ ♭ กลับเป็นเสียงปกติ":"Cancels ♯ or ♭","กุญแจ บอกชื่อเสียงของเส้นและช่อง":"Names the lines and spaces","ห้องเพลง ระหว่างเส้นกั้นห้อง":"The space between bar lines","เครื่องหมายบอกจำนวนจังหวะต่อห้อง":"Shows beats per measure","บันไดเสียง":"A series of notes in order","ช่วงเสียงห่างกัน 8 ขั้น":"Eight steps apart","เครื่องหมายแปลงเสียงต้นบรรทัด":"Sharps/flats at the start of the staff","ระยะห่างระหว่างสองเสียง":"Distance between two notes","เส้นโยงเสียงเดียวกันให้ต่อกัน":"Joins two identical notes","เส้นโค้งเชื่อมต่างระดับให้ราบรื่น":"Curve joining different notes smoothly","โน้ตมีจุด เพิ่มค่าอีกครึ่งหนึ่ง":"A dot adds half the note's length","โน้ตตัวแรกของบันไดเสียง":"First note of the scale","การลงจบประโยคเพลง":"Ending of a musical phrase","เส้นน้อย เส้นสั้นนอกบรรทัด":"Short line outside the staff"};
+const RU=[
+["ความหมายเป็นคำอธิบายสรุปของผู้เขียน ควรตรวจกับ Oxford Dictionary of Music ก่อนใช้งานจริง","Meanings are the author's brief summaries. Check them against the Oxford Dictionary of Music before real use."],
+["แตะชื่อนักประพันธ์ทางซ้าย แล้วแตะบทเพลงทางขวาที่ตรงกัน","Tap a composer on the left, then the matching piece on the right"],
+["แตะศัพท์ทางซ้าย แล้วแตะความหมายทางขวาที่ตรงกัน","Tap a term on the left, then its matching meaning on the right"],
+["ฟังตัวอย่าง กดไมค์แล้วพูดตาม ให้ AI ตรวจการออกเสียง (พูดผิดเสียหัวใจ 1 ดวง)","Listen, tap the mic and say it. Your pronunciation is checked (a wrong try costs 1 heart)"],
+["~คำที่ (\\d+) / (\\d+) · ฟังตัวอย่างก่อน แล้วพูดตามให้ชัด","Word $1 / $2 · listen first, then say it clearly"],
+["เบราว์เซอร์นี้ยังไม่รองรับการตรวจเสียง (ลองใช้ Chrome / Edge / Safari) — ตรวจเองแทนได้","This browser can't check speech (try Chrome / Edge / Safari) — you can self-check instead"],
+["ยังไม่ได้อนุญาตให้ใช้ไมโครโฟน — อนุญาตในเบราว์เซอร์ หรือตรวจเองแทนได้","Microphone access is blocked — allow it in the browser, or self-check instead"],
+["เชื่อมต่อบริการตรวจเสียงไม่ได้ — ตรวจเองแทนได้","Can't reach the speech service — you can self-check instead"],
+["ไม่ได้ยินเสียง ลองกดไมค์แล้วพูดอีกครั้ง","Didn't hear anything. Tap the mic and try again"],
+["กำลังฟัง… พูดได้เลย","Listening… go ahead"],
+["~ลองฟังตัวอย่างแล้วพูดอีกครั้ง \\(เหลือ (\\d+) ครั้ง\\)","Listen again and retry ($1 left)"],
+["ถูกต้อง! ได้ยินว่า","Correct! Heard"],["ได้ยินว่า","Heard"],["ถูกต้อง เก่งมาก!","Correct, well done!"],["ถูกต้อง!","Correct!"],
+["เฉลย: อ่านว่า","Answer: say"],["— ไปคำถัดไป","— next word"],
+["ลองใหม่อีกครั้ง ดูเฉลยด้านล่าง","Try again — see the answers below"],
+["~ผิด (\\d+) ครั้ง · เวลา","$1 mistakes · time"],["หัวใจหมด","Out of hearts"],["หมดเวลา","Time's up"],["ผ่านด่าน!","Level cleared!"],
+["ด่านถัดไป","Next level"],["เล่นซ้ำ","Replay"],["เลือกด่าน","Choose level"],["ดูให้จำก่อนเริ่มเล่น","Memorize these first"],["เริ่มเล่น","Start"],["ศัพท์ในด่านนี้","Terms in this level"],
+["ยุคศตวรรษที่ 20","20th-century era"],["ยุคเรเนซองส์","Renaissance era"],["ยุคบาโรก","Baroque era"],["ยุคคลาสสิก","Classical era"],["ยุคโรแมนติก","Romantic era"],
+["ศตวรรษที่ 20","20th century"],["เรเนซองส์","Renaissance"],["บาโรก","Baroque"],["คลาสสิก","Classical"],["โรแมนติก","Romantic"],
+["ค.ศ. 1400–1600","1400–1600 AD"],["1900 เป็นต้นไป","1900 onward"],["ทบทวนทุกยุค","All-eras review"],["ด่านทบทวน","Review level"],["ด่านปกติ","Regular level"],
+["~พูดตาม (\\d+) คำ","Say $1 words"],["~(\\d+) คู่","$1 pairs"],["~(\\d+) คำ","$1 terms"],
+["ฝึกออกเสียง","Pronunciation Practice"],["ฉันออกเสียงได้แล้ว (ตรวจเอง)","I said it (self-check)"],["ฟังตัวอย่าง","Listen"],["กดแล้วพูด","Tap & speak"],["ข้ามคำนี้","Skip this word"],["← ออก","← Exit"],
+["มาจับคู่กันเลย!","Let's match!"],["พูดตามฉันนะ!","Say it after me!"],["เก่งมาก!","Great job!"],["ใช่เลย!","That's it!"],["เยี่ยมไปเลย!","Awesome!"],["ลองอีกครั้งนะ","Try again!"],["ไม่เป็นไร สู้ๆ!","It's OK, keep going!"],["เกือบแล้ว!","Almost!"],
+["สวัสดี! ฉันชื่อ โน้ต","Hi! I'm Note"],["คุณชื่ออะไร?","What's your name?"],["พิมพ์ชื่อของคุณ","Type your name"],["เริ่มเลย","Let's go"],
+["~สวัสดี (.+)!","Hello $1!"],["วันนี้เล่นอะไรดี?","What shall we play today?"],["เลือกระดับ","Choose level"],
+["ไม่จำกัดเวลา · หัวใจเพิ่ม","No time limit · extra hearts"],["จับเวลา · ปกติ","Timed · normal"],["เวลาน้อย · หัวใจลด","Short time · fewer hearts"],
+["~ผ่านแล้ว (\\d+) จาก (\\d+) ด่าน","Cleared $1 of $2 levels"],["~ผ่านแล้ว (\\d+) / (\\d+) ด่าน","Cleared $1 / $2 levels"],["~ดาว (\\d+) / (\\d+)","Stars $1 / $2"],
+["~เล่นต่อ · (.*) ด่าน (\\d+)","Continue · $1 Level $2"],["🎉 ครบทุกด่านแล้ว","🎉 All levels cleared"],["หมวดของคุณ","Your topics"],
+["คอร์สทั้งหมด","All courses"],["เลือกหมวดที่อยากฝึก","Pick a topic to practice"],["เส้นทางผจญภัย","Adventure map"],
+["~ด่าน (\\d+)–(\\d+)","Levels $1–$2"],[" · 5 ยุค"," · 5 eras"],["~ต่อเนื่อง (\\d+) วัน","$1-day streak"],["เล่นทุกวันเพื่อรักษาสถิติ","Play every day to keep your streak"],
+["ตามหมวด","By topic"],["เหรียญที่ได้","Medals earned"],["ผ่านครบทุกด่านในหมวดเพื่อรับเหรียญ","Clear every level in a topic to earn its medal"],
+["ด่านที่ผ่าน","Levels cleared"],["วันต่อเนื่อง","Day streak"],["ตู้เหรียญ","Medal case"],["ตั้งค่า","Settings"],["แก้ชื่อ","Change name"],
+["เปิดทุกด่าน (เดโม)","Unlock all levels (demo)"],["ปิดโหมดเปิดทุกด่าน","Turn off unlock-all"],["เปิดเสียงอ่านอัตโนมัติ","Turn on auto voice"],["ปิดเสียงอ่านอัตโนมัติ","Turn off auto voice"],
+["ล้างความคืบหน้า","Reset progress"],["แตะอีกครั้งเพื่อยืนยัน","Tap again to confirm"],
+["หน้าหลัก","Home"],["คอร์ส","Courses"],["ความก้าวหน้า","Progress"],["โปรไฟล์","Profile"],
+["ความเร็วและความดัง","Tempo & Dynamics"],["วิธีเล่นและอารมณ์","Articulation & Mood"],["รูปแบบและการแสดง","Form & Performance"],["เครื่องดนตรี","Instruments"],["ทฤษฎีเบื้องต้น","Music Theory Basics"],["นักประพันธ์เพลง","Composers"],
+["ง่าย · ","Easy · "],["กลาง · ","Medium · "],["ยาก · ","Hard · "],["ท้าทาย · ","Challenge · "],
+["~(\\d+) ด่าน","$1 levels"],["~ด่าน (\\d+)","Level $1"],["ดาว","Stars"]];
+const RX=RU.map(([a,b])=>[new RegExp(a[0]==="~"?a.slice(1):a.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"g"),b]);
+const hasTh=s=>/[\u0E00-\u0E7F]/.test(s);
+function tx(s){if(S.lang!=="en"||!hasTh(s))return s;
+ const m=s.trim();if(EN[m])return s.replace(m,EN[m]);
+ const i=s.lastIndexOf(" — "),r=i>=0&&EN[s.slice(i+3).trim()];if(r)s=s.slice(0,i+3)+r;
+ for(const[x,e]of RX)s=s.replace(x,e);return s}
+function walk(n){if(n.nodeType===3){const v=tx(n.nodeValue);if(v!==n.nodeValue)n.nodeValue=v}
+ else if(n.nodeType===1){["placeholder","aria-label","title"].forEach(a=>{const v=n.getAttribute&&n.getAttribute(a);if(v&&hasTh(v)){const w=tx(v);if(w!==v)n.setAttribute(a,w)}});n.childNodes.forEach(walk)}}
+new MutationObserver(ms=>{if(S.lang!=="en")return;ms.forEach(m=>m.type==="characterData"?walk(m.target):m.addedNodes.forEach(walk))}).observe(document.body,{childList:true,subtree:true,characterData:true});
+Object.assign(EN,{"สิงโต":"Lion","ลิง":"Monkey","กบ":"Frog","หมี":"Bear","แกะ":"Sheep","แมว":"Cat","นกแก้ว":"Parrot","แพนด้า":"Panda","กระต่าย":"Rabbit","เพนกวิน":"Penguin","สวัสดี! เลือกตัวละครของคุณ":"Hi! Pick your character","แล้วบอกชื่อหน่อยนะ":"then tell us your name","ตัวละครของฉัน":"My character"});
+applyLang();
+render();
+</script>
+</body>
+</html>
